@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shriraksha's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-4 fade-in">
+    <h1 class="text-5xl font-bold mb-4">Hi, I'm Shriraksha</h1>
+    <p class="text-xl text-gray-300 mb-6">Frontend Developer | Problem Solver | Tech Enthusiast👑</p>
+    <div class="space-x-4">
+      <a href="#projects" class="transition bg-blue-600 px-6 py-2 rounded-full hover:bg-blue-700">View My Work</a>
+      <a href="uhv-blog.html" class="transition bg-pink-600 px-6 py-2 rounded-full hover:bg-pink-700">UHV Blog</a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="py-16 px-6 bg-gray-800 fade-in">
+    <h2 class="text-3xl font-semibold text-center mb-10">About Me</h2>
+    <div class="max-w-4xl mx-auto text-center text-gray-300 text-lg">
+      <p>Hey! I’m Shriraksha, a frontend developer with a focus on building clean and responsive web interfaces using HTML, Tailwind CSS, and JavaScript. I enjoy turning ideas into real, usable websites and love learning through hands-on projects.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="py-16 px-6 bg-gray-900 fade-in">
+    <h2 class="text-3xl font-semibold text-center mb-10">Skills</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="transition hover:scale-110">HTML</div>
+      <div class="transition hover:scale-110">CSS</div>
+      <div class="transition hover:scale-110">Tailwind CSS</div>
+      <div class="transition hover:scale-110">JavaScript</div>
+      <div class="transition hover:scale-110">Laravel (Basics)</div>
+      <div class="transition hover:scale-110">Git & GitHub</div>
+      <div class="transition hover:scale-110">APIs</div>
+      <div class="transition hover:scale-110">Problem Solving (DSA)</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 px-6 bg-gray-800 fade-in">
+    <h2 class="text-3xl font-semibold text-center mb-10">Projects</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-gray-900 p-4 rounded-xl transition transform hover:scale-105">
+        <h3 class="text-xl font-bold mb-2">Weather App</h3>
+        <p class="text-gray-400">Displays real-time weather using an API.</p>
+        <a href="https://github.com/shriraksha-shetty18/weather-app" class="text-blue-400 mt-2 inline-block">GitHub Link</a>
+      </div>
+      <div class="bg-gray-900 p-4 rounded-xl transition transform hover:scale-105">
+        <h3 class="text-xl font-bold mb-2">Currency Converter</h3>
+        <p class="text-gray-400">Converts currencies live with exchange rate APIs.</p>
+        <a href="https://github.com/shriraksha-shetty18/currency-converter" class="text-blue-400 mt-2 inline-block">GitHub Link</a>
+      </div>
+      <div class="bg-gray-900 p-4 rounded-xl transition transform hover:scale-105">
+        <h3 class="text-xl font-bold mb-2">Amazon Clone</h3>
+        <p class="text-gray-400">Clone of Amazon with frontend design and logic.</p>
+        <a href="https://github.com/shriraksha-shetty18/amazon-clone" class="text-blue-400 mt-2 inline-block">GitHub Link</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-16 px-6 bg-gray-900 fade-in">
+    <h2 class="text-3xl font-semibold text-center mb-10">Let's Build Something!</h2>
+    <div class="max-w-3xl mx-auto text-center text-gray-300 text-lg">
+      <p>If you’ve got an idea, a collab offer, or just wanna talk code and chaos — I’m down! 👩🏻‍💻 Drop me a message or email me directly.</p>
+      <p class="mt-6 text-xl font-bold">📩 <a href="mailto:shrirakshashetty18@gmail.com" class="text-blue-400 hover:underline">shrirakshashetty18@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-gray-900 border-t border-gray-700 fade-in">
+    <p>Connect with me:</p>
+    <div class="mt-2 space-x-4">
+      <a href="https://github.com/shriraksha-shetty18" class="text-blue-400 hover:underline">GitHub</a>
+      <a href="https://www.linkedin.com/in/shriraksha-shetty-2a93b9293" class="text-blue-400 hover:underline">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      alert("Message sent! (Pretend it actually works 😜)");
+    }
+  </script>
+</body>
+</html>
